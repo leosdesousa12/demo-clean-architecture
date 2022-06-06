@@ -1,0 +1,10 @@
+apply plugin: 'application'
+
+mainClassName = "com.br.user.registration.demo.Boot"
+
+dependencies {
+    implementation project(":use-case-project:use-case")
+    implementation project(":use-case-project:use-case-ports")
+    implementation project(":external-services:web")
+
+}
